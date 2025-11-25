@@ -110,9 +110,9 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">{t('glance.title')}</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { name: t('glance.hostel'), image: '/p1.jpg' },
-              { name: t('glance.mess'), image: '/p2.jpg' },
-              { name: t('glance.library'), image: '/p3.jpg' },
+              { name: t('glance.hostel'), image: '/t9.jpg' },
+              { name: t('glance.mess'), image: '/t48.jpg' },
+              { name: t('glance.library'), image: '/t5.jpg' },
               { name: t('glance.seminar'), image: '/p4.jpg' }
             ].map((item, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
