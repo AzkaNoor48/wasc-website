@@ -8,7 +8,14 @@ export default function Courses() {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedDuration, setSelectedDuration] = useState('all');
   const [selectedMode, setSelectedMode] = useState('all');
-  const [selectedCourse, setSelectedCourse] = useState(null);
+  const [selectedCourse, setSelectedCourse] = useState<{
+    id: number;
+    name: string;
+    category: string;
+    duration: string;
+    mode: string;
+    image: string;
+  } | null>(null);
 
   const courses = [
     {
