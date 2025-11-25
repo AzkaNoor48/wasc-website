@@ -3,7 +3,9 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { useLanguage } from '@/contexts/LanguageContext';
+import Testimonials from '@/components/Testimonials';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -45,12 +47,12 @@ export default function Home() {
                 {t('hero.subtitle')}
               </p>
               <div className="flex flex-wrap gap-4">
-                <button className="px-6 py-3 bg-[#E6B950] text-gray-900 rounded-md hover:bg-[#d4a842] font-semibold transition shadow-lg">
-                  {t('hero.apply')}
-                </button>
-                <button className="px-6 py-3 bg-[#0E8ACA] text-white rounded-md hover:bg-[#0a6fa0] font-semibold transition border-2 border-white/30">
-                  {t('hero.download')}
-                </button>
+                <Link href="/about" className="px-6 py-3 bg-[#E6B950] text-gray-900 rounded-md hover:bg-[#d4a842] font-semibold transition shadow-lg">
+                  Explore
+                </Link>
+                <Link href="/courses" className="px-6 py-3 bg-[#0E8ACA] text-white rounded-md hover:bg-[#0a6fa0] font-semibold transition border-2 border-white/30">
+                  View Courses
+                </Link>
               </div>
             </div>
             <div className="relative">
@@ -165,9 +167,9 @@ export default function Home() {
                   <p className="text-gray-700 mb-2">Advanced Administrative Management</p>
                   <p className="text-sm text-gray-600">Starting: January 2025</p>
                 </div>
-                <button className="w-full px-4 py-2 bg-[#0E8ACA] text-white rounded-md hover:bg-[#0a6fa0] transition shadow-md font-medium">
+                <Link href="/courses" className="block w-full px-4 py-2 bg-[#0E8ACA] text-white rounded-md hover:bg-[#0a6fa0] transition shadow-md font-medium text-center">
                   {t('upcoming.viewAll')}
-                </button>
+                </Link>
               </div>
 
               {/* Important Notices */}
@@ -176,7 +178,10 @@ export default function Home() {
                 <div className="bg-[#f4d99a] rounded-lg p-4 mb-4 border border-[#E6B950]">
                   <p className="text-gray-700">Registration deadline extended for Q1 2025 courses</p>
                 </div>
-                <button className="w-full px-4 py-2 bg-[#0E8ACA] text-white rounded-md hover:bg-[#0a6fa0] transition shadow-md font-medium">
+                <button
+                  onClick={() => alert('Important Notices - Coming Soon!')}
+                  className="w-full px-4 py-2 bg-[#0E8ACA] text-white rounded-md hover:bg-[#0a6fa0] transition shadow-md font-medium"
+                >
                   {t('notices.viewAll')}
                 </button>
               </div>
@@ -184,6 +189,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <Testimonials />
 
       {/* Affiliated Organisations */}
       <section className="py-16 bg-[#062D5C] text-white">

@@ -94,57 +94,6 @@ export default function Testimonials() {
           ))}
         </div>
 
-        {/* Feedback Form Section */}
-        <div className="mt-16 bg-gradient-to-br from-[#e8f4fa] to-[#f4d99a] rounded-lg p-8 border-2 border-[#93AEB9]">
-          <div className="max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
-              {t('testimonials.feedback')}
-            </h3>
-            <form className="space-y-4">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                  {t('testimonials.name')}
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="w-full px-4 py-2 border border-[#93AEB9] rounded-md focus:outline-none focus:ring-2 focus:ring-[#0E8ACA]"
-                  placeholder={t('testimonials.name')}
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  {t('testimonials.email')}
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full px-4 py-2 border border-[#93AEB9] rounded-md focus:outline-none focus:ring-2 focus:ring-[#0E8ACA]"
-                  placeholder={t('testimonials.email')}
-                />
-              </div>
-              <div>
-                <label htmlFor="feedback" className="block text-sm font-medium text-gray-700 mb-2">
-                  {t('testimonials.feedbackText')}
-                </label>
-                <textarea
-                  id="feedback"
-                  rows={4}
-                  className="w-full px-4 py-2 border border-[#93AEB9] rounded-md focus:outline-none focus:ring-2 focus:ring-[#0E8ACA]"
-                  placeholder={t('testimonials.feedbackText')}
-                ></textarea>
-              </div>
-              <div className="text-center">
-                <button
-                  type="submit"
-                  className="px-8 py-3 bg-[#0E8ACA] text-white rounded-md hover:bg-[#0a6fa0] font-semibold transition shadow-md hover:shadow-lg"
-                >
-                  {t('testimonials.submit')}
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
       </div>
     </section>
   );

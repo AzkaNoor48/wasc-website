@@ -61,7 +61,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-2">
+          <div className="hidden lg:flex items-center space-x-1 ml-auto">
             <Link
               href="/"
               className="px-5 py-3 text-lg font-semibold text-gray-800 hover:text-[#0E8ACA] hover:bg-[#e8f4fa] rounded-md transition-colors duration-200"
@@ -81,6 +81,12 @@ export default function Navbar() {
               {t('nav.faculty')}
             </Link>
             <Link
+              href="/vision"
+              className="px-5 py-3 text-lg font-semibold text-gray-800 hover:text-[#0E8ACA] hover:bg-[#e8f4fa] rounded-md transition-colors duration-200"
+            >
+              Vision
+            </Link>
+            <Link
               href="/about"
               className="px-5 py-3 text-lg font-semibold text-gray-800 hover:text-[#0E8ACA] hover:bg-[#e8f4fa] rounded-md transition-colors duration-200"
             >
@@ -94,16 +100,8 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Search and Language Switcher */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <button
-              className="p-2.5 text-gray-700 hover:text-[#0E8ACA] hover:bg-[#e8f4fa] transition rounded-md"
-              aria-label="Search"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-            </button>
+          {/* Language Switcher */}
+          <div className="hidden lg:flex items-center ml-4">
             <LanguageSwitcher />
           </div>
 
@@ -165,6 +163,13 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(false)}
             >
               {t('nav.faculty')}
+            </Link>
+            <Link
+              href="/vision"
+              className="block px-4 py-3.5 text-lg font-semibold text-gray-800 hover:bg-[#e8f4fa] hover:text-[#0E8ACA] rounded-md transition"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Vision
             </Link>
             <Link
               href="/about"

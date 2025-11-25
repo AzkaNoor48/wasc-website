@@ -220,12 +220,6 @@ export default function Courses() {
                 </div>
               ))}
             </div>
-
-            <div className="mt-8 text-center">
-              <button className="px-8 py-3 bg-[#0E8ACA] text-white rounded-md hover:bg-[#062D5C] font-semibold transition shadow-md">
-                Load More Courses
-              </button>
-            </div>
           </div>
 
           {/* Right Panel - Course Details */}
