@@ -3,25 +3,19 @@ import Footer from '@/components/Footer';
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-b from-[#e8f4fa] to-[#FBFAF7]">
       <Navbar />
 
-      {/* Breadcrumbs */}
-      <div className="bg-[#FBFAF7] py-4">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="text-sm">
-            <a href="/" className="text-[#5D6A62] hover:text-[#0E8ACA]">Home</a>
-            <span className="mx-2 text-[#93AEB9]">/</span>
-            <span className="text-[#062D5C] font-medium">Contact</span>
-          </nav>
-        </div>
-      </div>
-
       {/* Page Header */}
-      <div className="bg-white py-12">
+      <div className="bg-[#062D5C] py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-[#062D5C] mb-4 text-center">Contact Us</h1>
-          <p className="text-lg text-[#5D6A62] text-center max-w-2xl mx-auto">
+          <nav className="text-sm mb-6">
+            <a href="/" className="text-[#93AEB9] hover:text-white">Home</a>
+            <span className="mx-2 text-[#93AEB9]">/</span>
+            <span className="text-white font-medium">Contact</span>
+          </nav>
+          <h1 className="text-4xl font-bold text-white mb-4">Contact Us</h1>
+          <p className="text-lg text-[#93AEB9] max-w-2xl">
             Get in touch with us for inquiries, course information, or any assistance you may need.
           </p>
         </div>

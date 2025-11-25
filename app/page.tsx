@@ -75,7 +75,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                     </svg>
                   </button>
-                  <span className="text-sm text-[#93AEB9]">{t('hero.carousel')}</span>
+                  <span className="text-sm text-[#93AEB9]">Life at WASC</span>
                   <button
                     onClick={nextImage}
                     className="p-2 bg-white/20 rounded-full hover:bg-white/30 transition"
