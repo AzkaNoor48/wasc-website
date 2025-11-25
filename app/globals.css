@@ -1,8 +1,65 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FBFAF7;
+  --foreground: #1a1a1a;
+
+  /* Logo Color Palette - Exact Colors */
+  --primary-navy: #062D5C;
+  /* Dark Navy Blue - Primary Theme */
+  --primary-navy-dark: #041d3f;
+  /* Darker navy for hover */
+  --primary-navy-light: #0a3d6f;
+  /* Lighter navy */
+
+  --golden-yellow: #E6B950;
+  /* Golden Yellow - Secondary Accent */
+  --golden-yellow-light: #f4d99a;
+  /* Light golden yellow */
+  --golden-yellow-dark: #d4a842;
+  /* Darker golden yellow */
+
+  --bright-blue: #0E8ACA;
+  /* Bright Blue - CTA Buttons */
+  --bright-blue-light: #3ba3d4;
+  /* Lighter bright blue */
+  --bright-blue-dark: #0a6fa0;
+  /* Darker bright blue */
+
+  --sky-blue: #0E8ACA;
+  /* Light Sky Blue */
+  --sky-blue-light: #d1e7f5;
+  /* Very light sky blue */
+  --sky-blue-50: #e8f4fa;
+  /* Sky blue backgrounds */
+
+  --steel-blue: #93AEB9;
+  /* Muted Steel Blue - Neutral */
+  --steel-blue-light: #b8ced6;
+  /* Light steel blue */
+  --steel-blue-dark: #6d8a95;
+  /* Dark steel blue */
+
+  --dark-grey-green: #5D6A62;
+  /* Dark Grey-Green - Accents */
+  --dark-grey-green-light: #7a8b82;
+  /* Light grey-green */
+
+  --off-white: #FBFAF7;
+  /* Very Light Cream - Backgrounds */
+  --white: #ffffff;
+
+  /* Neutral Grays */
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
 }
 
 @theme inline {
@@ -12,15 +69,17 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  direction: rtl;
+}
+
+[dir="rtl"] .flex {
+  flex-direction: row-reverse;
 }
