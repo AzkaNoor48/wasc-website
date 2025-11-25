@@ -111,7 +111,7 @@ export default function Courses() {
       {/* Breadcrumbs */}
       <div className="bg-[#FBFAF7] py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="text-lg">
+          <nav className="text-sm">
             <a href="/" className="text-[#5D6A62] hover:text-[#0E8ACA]">Home</a>
             <span className="mx-2 text-[#93AEB9]">/</span>
             <span className="text-[#062D5C] font-medium">Courses</span>
@@ -122,8 +122,8 @@ export default function Courses() {
       {/* Page Header */}
       <div className="bg-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-6xl font-bold text-[#062D5C] mb-2">Courses</h1>
-          <p className="text-2xl text-[#5D6A62]">Programmes for Administrative Staff</p>
+          <h1 className="text-4xl font-bold text-[#062D5C] mb-2">Courses</h1>
+          <p className="text-lg text-[#5D6A62]">Programmes for Administrative Staff</p>
         </div>
       </div>
 
@@ -136,7 +136,7 @@ export default function Courses() {
             <div className="bg-[#FBFAF7] rounded-lg p-6 mb-8">
               <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                 <div>
-                  <label className="block text-lg font-medium text-[#5D6A62] mb-2">Category</label>
+                  <label className="block text-sm font-medium text-[#5D6A62] mb-2">Category</label>
                   <select
                     value={selectedCategory}
                     onChange={(e) => setSelectedCategory(e.target.value)}
@@ -148,7 +148,7 @@ export default function Courses() {
                   </select>
                 </div>
                 <div>
-                  <label className="block text-lg font-medium text-[#5D6A62] mb-2">Duration</label>
+                  <label className="block text-sm font-medium text-[#5D6A62] mb-2">Duration</label>
                   <select
                     value={selectedDuration}
                     onChange={(e) => setSelectedDuration(e.target.value)}
@@ -160,7 +160,7 @@ export default function Courses() {
                   </select>
                 </div>
                 <div>
-                  <label className="block text-lg font-medium text-[#5D6A62] mb-2">Mode</label>
+                  <label className="block text-sm font-medium text-[#5D6A62] mb-2">Mode</label>
                   <select
                     value={selectedMode}
                     onChange={(e) => setSelectedMode(e.target.value)}
@@ -186,7 +186,7 @@ export default function Courses() {
             <div className="space-y-8">
               {Object.entries(groupedCourses).map(([category, categoryCourses]) => (
                 <div key={category}>
-                  <h2 className="text-4xl font-bold text-[#062D5C] mb-4">{category}</h2>
+                  <h2 className="text-2xl font-bold text-[#062D5C] mb-4">{category}</h2>
                   <div className="space-y-4">
                     {categoryCourses.map(course => (
                       <div
@@ -194,8 +194,8 @@ export default function Courses() {
                         className="bg-white border border-[#93AEB9] rounded-lg p-6 hover:shadow-md transition grid grid-cols-1 md:grid-cols-4 gap-4"
                       >
                         <div className="md:col-span-3">
-                          <h3 className="text-3xl font-semibold text-[#062D5C] mb-2">{course.name}</h3>
-                          <div className="flex flex-wrap gap-4 text-lg text-[#5D6A62]">
+                          <h3 className="text-xl font-semibold text-[#062D5C] mb-2">{course.name}</h3>
+                          <div className="flex flex-wrap gap-4 text-sm text-[#5D6A62]">
                             <span>Duration: {course.duration}</span>
                             <span>Mode: {course.mode}</span>
                           </div>
@@ -205,11 +205,11 @@ export default function Courses() {
                           <div className="flex gap-2">
                             <button
                               onClick={() => setSelectedCourse(course)}
-                              className="px-4 py-2 bg-[#0E8ACA] text-white rounded-md hover:bg-[#062D5C] text-lg transition"
+                              className="px-4 py-2 bg-[#0E8ACA] text-white rounded-md hover:bg-[#062D5C] text-sm transition"
                             >
                               Details
                             </button>
-                            <button className="px-4 py-2 bg-[#e8f4fa] text-[#062D5C] rounded-md hover:bg-[#93AEB9] hover:text-white text-lg transition">
+                            <button className="px-4 py-2 bg-[#e8f4fa] text-[#062D5C] rounded-md hover:bg-[#93AEB9] hover:text-white text-sm transition">
                               Register
                             </button>
                           </div>
@@ -237,8 +237,8 @@ export default function Courses() {
                   <div className="w-full h-48 bg-[#e8f4fa] rounded-lg flex items-center justify-center mb-4">
                     <span className="text-6xl">{selectedCourse.image}</span>
                   </div>
-                  <h3 className="text-3xl font-bold text-[#062D5C] mb-2">{selectedCourse.name}</h3>
-                  <div className="space-y-2 text-lg text-[#5D6A62] mb-4">
+                  <h3 className="text-xl font-bold text-[#062D5C] mb-2">{selectedCourse.name}</h3>
+                  <div className="space-y-2 text-sm text-[#5D6A62] mb-4">
                     <p><strong>Category:</strong> {selectedCourse.category}</p>
                     <p><strong>Duration:</strong> {selectedCourse.duration}</p>
                     <p><strong>Mode:</strong> {selectedCourse.mode}</p>
@@ -256,7 +256,7 @@ export default function Courses() {
 
             {/* Important Notices */}
             <div className="bg-[#FBFAF7] rounded-lg p-6 border border-[#E6B950]">
-              <h3 className="text-2xl font-bold text-[#062D5C] mb-4">Important Notices</h3>
+              <h3 className="text-lg font-bold text-[#062D5C] mb-4">Important Notices</h3>
               <div className="space-y-3">
                 <label className="flex items-center">
                   <input type="checkbox" className="mr-2" />

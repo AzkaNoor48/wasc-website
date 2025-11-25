@@ -114,7 +114,7 @@ export default function Faculty() {
       {/* Breadcrumbs */}
       <div className="bg-[#FBFAF7] py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="text-lg">
+          <nav className="text-sm">
             <a href="/" className="text-[#5D6A62] hover:text-[#0E8ACA]">Home</a>
             <span className="mx-2 text-[#93AEB9]">/</span>
             <span className="text-[#062D5C] font-medium">Faculty</span>
@@ -125,15 +125,15 @@ export default function Faculty() {
       {/* Page Header */}
       <div className="bg-[#062D5C] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-6xl font-bold mb-4">Our Faculty</h1>
-          <p className="text-3xl text-[#93AEB9]">Experienced professionals dedicated to your professional development</p>
+          <h1 className="text-4xl font-bold mb-4">Our Faculty</h1>
+          <p className="text-xl text-[#93AEB9]">Experienced professionals dedicated to your professional development</p>
         </div>
       </div>
 
       {/* Departments Section */}
       <section className="py-16 bg-[#FBFAF7]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-5xl font-bold text-[#062D5C] mb-12 text-center">Our Departments</h2>
+          <h2 className="text-3xl font-bold text-[#062D5C] mb-12 text-center">Our Departments</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {departments.map((dept, index) => (
               <div
@@ -143,16 +143,16 @@ export default function Faculty() {
                 <div className="flex items-center mb-4">
                   <div className="text-5xl mr-4">{dept.icon}</div>
                   <div>
-                    <h3 className="text-3xl font-bold text-[#062D5C]">{dept.name}</h3>
-                    <p className="text-lg text-[#5D6A62]">{dept.facultyCount} Faculty Members</p>
+                    <h3 className="text-xl font-bold text-[#062D5C]">{dept.name}</h3>
+                    <p className="text-sm text-[#5D6A62]">{dept.facultyCount} Faculty Members</p>
                   </div>
                 </div>
                 <p className="text-[#5D6A62] mb-4">{dept.description}</p>
                 <div className="border-t border-[#93AEB9] pt-4">
-                  <p className="text-lg font-semibold text-[#062D5C] mb-2">Key Courses:</p>
+                  <p className="text-sm font-semibold text-[#062D5C] mb-2">Key Courses:</p>
                   <ul className="space-y-1">
                     {dept.courses.map((course, idx) => (
-                      <li key={idx} className="text-lg text-[#5D6A62] flex items-center">
+                      <li key={idx} className="text-sm text-[#5D6A62] flex items-center">
                         <span className="w-2 h-2 bg-[#0E8ACA] rounded-full mr-2"></span>
                         {course}
                       </li>
@@ -168,7 +168,7 @@ export default function Faculty() {
       {/* Faculty Members Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-5xl font-bold text-[#062D5C] mb-12 text-center">Faculty Members</h2>
+          <h2 className="text-3xl font-bold text-[#062D5C] mb-12 text-center">Faculty Members</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {facultyMembers.map((member) => (
               <div
@@ -180,13 +180,13 @@ export default function Faculty() {
                     <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-[#062D5C] mb-1">{member.name}</h3>
-                <p className="text-lg text-[#0E8ACA] font-semibold mb-2">{member.position}</p>
-                <p className="text-lg text-[#5D6A62] mb-2">{member.department}</p>
-                <p className="text-base text-[#93AEB9] mb-3">{member.qualifications}</p>
+                <h3 className="text-lg font-bold text-[#062D5C] mb-1">{member.name}</h3>
+                <p className="text-sm text-[#0E8ACA] font-semibold mb-2">{member.position}</p>
+                <p className="text-sm text-[#5D6A62] mb-2">{member.department}</p>
+                <p className="text-xs text-[#93AEB9] mb-3">{member.qualifications}</p>
                 <a
                   href={`mailto:${member.email}`}
-                  className="text-lg text-[#0E8ACA] hover:text-[#062D5C] font-medium"
+                  className="text-sm text-[#0E8ACA] hover:text-[#062D5C] font-medium"
                 >
                   Contact
                 </a>
@@ -199,8 +199,8 @@ export default function Faculty() {
       {/* Call to Action */}
       <section className="py-16 bg-[#062D5C]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-5xl font-bold text-white mb-4">Join Our Faculty</h2>
-          <p className="text-3xl text-[#93AEB9] mb-8">
+          <h2 className="text-3xl font-bold text-white mb-4">Join Our Faculty</h2>
+          <p className="text-xl text-[#93AEB9] mb-8">
             We're always looking for experienced professionals to join our team
           </p>
           <a

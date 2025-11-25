@@ -76,18 +76,18 @@ export default function About() {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
-            <nav className="text-lg mb-6 text-[#93AEB9]">
+            <nav className="text-sm mb-6 text-[#93AEB9]">
               <a href="/" className="hover:text-white transition">{t('nav.home')}</a>
               <span className="mx-2">/</span>
               <span>{t('about.title')}</span>
             </nav>
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               {t('about.title')}
             </h1>
-            <p className="text-3xl md:text-4xl text-[#93AEB9] leading-relaxed mb-8">
+            <p className="text-xl md:text-2xl text-[#93AEB9] leading-relaxed mb-8">
               {t('about.subtitle')}
             </p>
-            <p className="text-2xl text-[#93AEB9] leading-relaxed">
+            <p className="text-lg text-[#93AEB9] leading-relaxed">
               WAPDA Administrative Staff College (WASC) is a premier training institution dedicated to building leadership and operational excellence. We provide comprehensive, transformative training programs that enhance the professional capabilities of administrative staff from WAPDA and its affiliated organizations.
             </p>
           </div>
@@ -106,10 +106,10 @@ export default function About() {
                 <div className="w-20 h-20 bg-[#e8f4fa] rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-4xl lg:text-5xl">{achievement.icon}</span>
                 </div>
-                <div className="text-5xl lg:text-6xl font-bold text-[#062D5C] mb-2">
+                <div className="text-3xl lg:text-4xl font-bold text-[#062D5C] mb-2">
                   {achievement.number}
                 </div>
-                <div className="text-lg lg:text-xl text-[#5D6A62] font-medium">
+                <div className="text-sm lg:text-base text-[#5D6A62] font-medium">
                   {achievement.label}
                 </div>
               </div>
@@ -128,9 +128,9 @@ export default function About() {
                 <div className="w-16 h-16 bg-[#e8f4fa] rounded-full flex items-center justify-center mr-4">
                   <span className="text-3xl">👁️</span>
                 </div>
-                <h2 className="text-5xl font-bold text-[#062D5C]">{t('about.vision')}</h2>
+                <h2 className="text-3xl font-bold text-[#062D5C]">{t('about.vision')}</h2>
               </div>
-              <p className="text-2xl text-[#5D6A62] leading-relaxed">
+              <p className="text-lg text-[#5D6A62] leading-relaxed">
                 To be the premier institution for administrative excellence, empowering WAPDA and its affiliated organizations with world-class training and development programs that foster leadership, innovation, and operational efficiency.
               </p>
             </div>
@@ -141,9 +141,9 @@ export default function About() {
                 <div className="w-16 h-16 bg-[#e8f4fa] rounded-full flex items-center justify-center mr-4">
                   <span className="text-3xl">🎯</span>
                 </div>
-                <h2 className="text-5xl font-bold text-[#062D5C]">{t('about.mission')}</h2>
+                <h2 className="text-3xl font-bold text-[#062D5C]">{t('about.mission')}</h2>
               </div>
-              <p className="text-2xl text-[#5D6A62] leading-relaxed mb-4">
+              <p className="text-lg text-[#5D6A62] leading-relaxed mb-4">
                 Our mission is to provide comprehensive, transformative training programs that enhance the professional capabilities of administrative staff through:
               </p>
               <ul className="space-y-3">
@@ -168,8 +168,8 @@ export default function About() {
       <section className="py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 lg:mb-16">
-            <h2 className="text-5xl lg:text-6xl font-bold text-[#062D5C] mb-4">Our Core Values</h2>
-            <p className="text-2xl text-[#5D6A62] max-w-2xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-bold text-[#062D5C] mb-4">Our Core Values</h2>
+            <p className="text-lg text-[#5D6A62] max-w-2xl mx-auto">
               The principles that guide our commitment to excellence and shape our approach to training and development
             </p>
           </div>
@@ -182,7 +182,7 @@ export default function About() {
                 <div className="w-16 h-16 bg-[#e8f4fa] rounded-full flex items-center justify-center mb-4">
                   <span className="text-4xl">{value.icon}</span>
                 </div>
-                <h3 className="text-3xl font-bold text-[#062D5C] mb-3">{value.title}</h3>
+                <h3 className="text-xl font-bold text-[#062D5C] mb-3">{value.title}</h3>
                 <p className="text-[#5D6A62] leading-relaxed">{value.description}</p>
               </div>
             ))}
@@ -194,8 +194,8 @@ export default function About() {
       <section className="py-16 lg:py-20 bg-[#062D5C] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 lg:mb-16">
-            <h2 className="text-5xl lg:text-6xl font-bold text-white mb-4">Our Journey</h2>
-            <p className="text-2xl text-[#93AEB9] max-w-2xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">Our Journey</h2>
+            <p className="text-lg text-[#93AEB9] max-w-2xl mx-auto">
               A timeline of milestones that have shaped WASC into the premier training institution it is today
             </p>
           </div>
@@ -213,9 +213,9 @@ export default function About() {
                   <div className="lg:w-1/2 lg:px-8 mb-6 lg:mb-0">
                     <div className="bg-gradient-to-br from-[#e8f4fa] to-[#FBFAF7] rounded-xl p-6 lg:p-8 border-l-4 border-[#0E8ACA] hover:shadow-lg transition-all transform hover:-translate-y-1">
                       <div className="w-16 h-16 bg-[#f4d99a] rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span className="text-[#062D5C] font-bold text-2xl">{item.year}</span>
+                        <span className="text-[#062D5C] font-bold text-lg">{item.year}</span>
                       </div>
-                      <h3 className="text-3xl lg:text-4xl font-bold text-[#062D5C] mb-3">{item.title}</h3>
+                      <h3 className="text-xl lg:text-2xl font-bold text-[#062D5C] mb-3">{item.title}</h3>
                       <p className="text-[#5D6A62] leading-relaxed">{item.description}</p>
                     </div>
                   </div>
@@ -234,8 +234,8 @@ export default function About() {
       <section className="py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 lg:mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-[#062D5C] mb-4">Our Campus</h2>
-            <p className="text-xl text-[#5D6A62] max-w-2xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-bold text-[#062D5C] mb-4">Our Campus</h2>
+            <p className="text-lg text-[#5D6A62] max-w-2xl mx-auto">
               Explore our state-of-the-art facilities and beautiful campus
             </p>
           </div>
@@ -263,8 +263,8 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-12">
             <div>
-              <h2 className="text-4xl lg:text-5xl font-bold text-[#062D5C] mb-4">{t('about.departments')}</h2>
-              <p className="text-xl text-[#5D6A62] max-w-2xl">
+              <h2 className="text-3xl lg:text-4xl font-bold text-[#062D5C] mb-4">{t('about.departments')}</h2>
+              <p className="text-lg text-[#5D6A62] max-w-2xl">
                 Comprehensive training programs across multiple departments to meet diverse professional development needs
               </p>
             </div>
@@ -289,7 +289,7 @@ export default function About() {
                 <div className={`w-16 h-16 bg-[#e8f4fa] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
                   <span className="text-3xl">{dept.icon}</span>
                 </div>
-                <h3 className="text-2xl font-bold text-[#062D5C] mb-2">{dept.name}</h3>
+                <h3 className="text-xl font-bold text-[#062D5C] mb-2">{dept.name}</h3>
                 <p className="text-[#5D6A62]">
                   Comprehensive training programs in {dept.name.toLowerCase()} management and operations.
                 </p>

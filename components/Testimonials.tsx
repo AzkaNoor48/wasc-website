@@ -40,10 +40,10 @@ export default function Testimonials() {
     <section className="py-16 bg-gradient-to-b from-[#e8f4fa] to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-800 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
             {t('testimonials.title')}
           </h2>
-          <p className="text-2xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             {t('testimonials.subtitle')}
           </p>
         </div>
@@ -80,14 +80,14 @@ export default function Testimonials() {
                 </div>
 
                 {/* Testimonial Content */}
-                <p className="text-gray-700 mb-4 italic text-lg">
+                <p className="text-gray-700 mb-4 italic text-sm">
                   "{testimonial.content}"
                 </p>
 
                 {/* Author Info */}
                 <div className="border-t border-gray-200 pt-4">
                   <p className="font-semibold text-gray-800">{testimonial.name}</p>
-                  <p className="text-lg text-gray-600">{testimonial.position}</p>
+                  <p className="text-sm text-gray-600">{testimonial.position}</p>
                 </div>
               </div>
             </div>
@@ -97,12 +97,12 @@ export default function Testimonials() {
         {/* Feedback Form Section */}
         <div className="mt-16 bg-gradient-to-br from-[#e8f4fa] to-[#f4d99a] rounded-lg p-8 border-2 border-[#93AEB9]">
           <div className="max-w-2xl mx-auto">
-            <h3 className="text-4xl font-bold text-gray-800 mb-6 text-center">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
               {t('testimonials.feedback')}
             </h3>
             <form className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-lg font-medium text-gray-700 mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                   {t('testimonials.name')}
                 </label>
                 <input
@@ -113,7 +113,7 @@ export default function Testimonials() {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-lg font-medium text-gray-700 mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                   {t('testimonials.email')}
                 </label>
                 <input
@@ -124,7 +124,7 @@ export default function Testimonials() {
                 />
               </div>
               <div>
-                <label htmlFor="feedback" className="block text-lg font-medium text-gray-700 mb-2">
+                <label htmlFor="feedback" className="block text-sm font-medium text-gray-700 mb-2">
                   {t('testimonials.feedbackText')}
                 </label>
                 <textarea

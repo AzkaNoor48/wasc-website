@@ -9,7 +9,7 @@ export default function Contact() {
       {/* Breadcrumbs */}
       <div className="bg-[#FBFAF7] py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="text-lg">
+          <nav className="text-sm">
             <a href="/" className="text-[#5D6A62] hover:text-[#0E8ACA]">Home</a>
             <span className="mx-2 text-[#93AEB9]">/</span>
             <span className="text-[#062D5C] font-medium">Contact</span>
@@ -20,8 +20,8 @@ export default function Contact() {
       {/* Page Header */}
       <div className="bg-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-6xl font-bold text-[#062D5C] mb-4 text-center">Contact Us</h1>
-          <p className="text-2xl text-[#5D6A62] text-center max-w-2xl mx-auto">
+          <h1 className="text-4xl font-bold text-[#062D5C] mb-4 text-center">Contact Us</h1>
+          <p className="text-lg text-[#5D6A62] text-center max-w-2xl mx-auto">
             Get in touch with us for inquiries, course information, or any assistance you may need.
           </p>
         </div>
@@ -32,7 +32,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div>
-            <h2 className="text-4xl font-bold text-[#062D5C] mb-6">Get in Touch</h2>
+            <h2 className="text-2xl font-bold text-[#062D5C] mb-6">Get in Touch</h2>
             <div className="space-y-6">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
@@ -42,7 +42,7 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-2xl font-semibold text-[#062D5C] mb-1">Address</h3>
+                  <h3 className="text-lg font-semibold text-[#062D5C] mb-1">Address</h3>
                   <p className="text-[#5D6A62]">WAPDA Administrative Staff College</p>
                   <p className="text-[#5D6A62]">Sunnyabad</p>
                 </div>
@@ -55,7 +55,7 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-2xl font-semibold text-[#062D5C] mb-1">Phone</h3>
+                  <h3 className="text-lg font-semibold text-[#062D5C] mb-1">Phone</h3>
                   <p className="text-[#5D6A62]">+92-42-1234567</p>
                   <p className="text-[#5D6A62]">+92-42-1234568</p>
                 </div>
@@ -68,7 +68,7 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-2xl font-semibold text-[#062D5C] mb-1">Email</h3>
+                  <h3 className="text-lg font-semibold text-[#062D5C] mb-1">Email</h3>
                   <p className="text-[#5D6A62]">info@wasc.gov.pk</p>
                   <p className="text-[#5D6A62]">admissions@wasc.gov.pk</p>
                 </div>
@@ -85,10 +85,10 @@ export default function Contact() {
 
           {/* Contact Form */}
           <div>
-            <h2 className="text-4xl font-bold text-[#062D5C] mb-6">Send us a Message</h2>
+            <h2 className="text-2xl font-bold text-[#062D5C] mb-6">Send us a Message</h2>
             <form className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-lg font-medium text-[#5D6A62] mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-[#5D6A62] mb-2">
                   Your Name
                 </label>
                 <input
@@ -99,7 +99,7 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-lg font-medium text-[#5D6A62] mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-[#5D6A62] mb-2">
                   Your Email
                 </label>
                 <input
@@ -110,7 +110,7 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="subject" className="block text-lg font-medium text-[#5D6A62] mb-2">
+                <label htmlFor="subject" className="block text-sm font-medium text-[#5D6A62] mb-2">
                   Subject
                 </label>
                 <input
@@ -121,7 +121,7 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-lg font-medium text-[#5D6A62] mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-[#5D6A62] mb-2">
                   Message
                 </label>
                 <textarea

@@ -14,7 +14,7 @@ function LogoImage() {
     // Fallback logo
     return (
       <div className="w-full h-full bg-[#062D5C] rounded-full flex items-center justify-center border-2 border-[#E6B950]">
-        <span className="text-white font-bold text-3xl lg:text-4xl">W</span>
+        <span className="text-white font-bold text-xl lg:text-2xl">W</span>
       </div>
     );
   }
@@ -53,10 +53,10 @@ export default function Navbar() {
               <LogoImage />
             </div>
             <div className="hidden sm:block">
-              <p className="text-2xl lg:text-3xl font-bold text-gray-900 leading-tight">
+              <p className="text-lg lg:text-xl font-bold text-gray-900 leading-tight">
                 WAPDA Administrative Staff College
               </p>
-              <p className="text-xl lg:text-2xl text-gray-700 font-medium">(WASC)</p>
+              <p className="text-base lg:text-lg text-gray-700 font-medium">(WASC)</p>
             </div>
           </Link>
 
@@ -64,31 +64,31 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center space-x-2">
             <Link
               href="/"
-              className="px-5 py-3 text-2xl font-semibold text-gray-800 hover:text-[#0E8ACA] hover:bg-[#e8f4fa] rounded-md transition-colors duration-200"
+              className="px-5 py-3 text-lg font-semibold text-gray-800 hover:text-[#0E8ACA] hover:bg-[#e8f4fa] rounded-md transition-colors duration-200"
             >
               {t('nav.home')}
             </Link>
             <Link
               href="/about"
-              className="px-5 py-3 text-2xl font-semibold text-gray-800 hover:text-[#0E8ACA] hover:bg-[#e8f4fa] rounded-md transition-colors duration-200"
+              className="px-5 py-3 text-lg font-semibold text-gray-800 hover:text-[#0E8ACA] hover:bg-[#e8f4fa] rounded-md transition-colors duration-200"
             >
               {t('nav.about')}
             </Link>
             <Link
               href="/courses"
-              className="px-5 py-3 text-2xl font-semibold text-gray-800 hover:text-[#0E8ACA] hover:bg-[#e8f4fa] rounded-md transition-colors duration-200"
+              className="px-5 py-3 text-lg font-semibold text-gray-800 hover:text-[#0E8ACA] hover:bg-[#e8f4fa] rounded-md transition-colors duration-200"
             >
               {t('nav.courses')}
             </Link>
             <Link
               href="/faculty"
-              className="px-5 py-3 text-2xl font-semibold text-gray-800 hover:text-[#0E8ACA] hover:bg-[#e8f4fa] rounded-md transition-colors duration-200"
+              className="px-5 py-3 text-lg font-semibold text-gray-800 hover:text-[#0E8ACA] hover:bg-[#e8f4fa] rounded-md transition-colors duration-200"
             >
               {t('nav.faculty')}
             </Link>
             <Link
               href="/contact"
-              className="px-5 py-3 text-2xl font-semibold text-gray-800 hover:text-[#0E8ACA] hover:bg-[#e8f4fa] rounded-md transition-colors duration-200"
+              className="px-5 py-3 text-lg font-semibold text-gray-800 hover:text-[#0E8ACA] hover:bg-[#e8f4fa] rounded-md transition-colors duration-200"
             >
               {t('nav.contact')}
             </Link>
@@ -111,19 +111,19 @@ export default function Navbar() {
           <div className="hidden md:flex lg:hidden items-center space-x-3">
             <Link
               href="/"
-              className="px-4 py-2 text-xl font-semibold text-gray-800 hover:text-[#0E8ACA] transition"
+              className="px-4 py-2 text-base font-semibold text-gray-800 hover:text-[#0E8ACA] transition"
             >
               {t('nav.home')}
             </Link>
             <Link
               href="/about"
-              className="px-4 py-2 text-xl font-semibold text-gray-800 hover:text-[#0E8ACA] transition"
+              className="px-4 py-2 text-base font-semibold text-gray-800 hover:text-[#0E8ACA] transition"
             >
               {t('nav.about')}
             </Link>
             <Link
               href="/courses"
-              className="px-4 py-2 text-xl font-semibold text-gray-800 hover:text-[#0E8ACA] transition"
+              className="px-4 py-2 text-base font-semibold text-gray-800 hover:text-[#0E8ACA] transition"
             >
               {t('nav.courses')}
             </Link>
@@ -147,41 +147,41 @@ export default function Navbar() {
           <div className="md:hidden lg:hidden pb-6 pt-4 space-y-1 border-t border-gray-200">
             <Link
               href="/"
-              className="block px-4 py-3.5 text-2xl font-semibold text-gray-800 hover:bg-[#e8f4fa] hover:text-[#0E8ACA] rounded-md transition"
+              className="block px-4 py-3.5 text-lg font-semibold text-gray-800 hover:bg-[#e8f4fa] hover:text-[#0E8ACA] rounded-md transition"
               onClick={() => setIsMenuOpen(false)}
             >
               {t('nav.home')}
             </Link>
             <Link
               href="/about"
-              className="block px-4 py-3.5 text-2xl font-semibold text-gray-800 hover:bg-[#e8f4fa] hover:text-[#0E8ACA] rounded-md transition"
+              className="block px-4 py-3.5 text-lg font-semibold text-gray-800 hover:bg-[#e8f4fa] hover:text-[#0E8ACA] rounded-md transition"
               onClick={() => setIsMenuOpen(false)}
             >
               {t('nav.about')}
             </Link>
             <Link
               href="/courses"
-              className="block px-4 py-3.5 text-2xl font-semibold text-gray-800 hover:bg-[#e8f4fa] hover:text-[#0E8ACA] rounded-md transition"
+              className="block px-4 py-3.5 text-lg font-semibold text-gray-800 hover:bg-[#e8f4fa] hover:text-[#0E8ACA] rounded-md transition"
               onClick={() => setIsMenuOpen(false)}
             >
               {t('nav.courses')}
             </Link>
             <Link
               href="/faculty"
-              className="block px-4 py-3.5 text-2xl font-semibold text-gray-800 hover:bg-[#e8f4fa] hover:text-[#0E8ACA] rounded-md transition"
+              className="block px-4 py-3.5 text-lg font-semibold text-gray-800 hover:bg-[#e8f4fa] hover:text-[#0E8ACA] rounded-md transition"
               onClick={() => setIsMenuOpen(false)}
             >
               {t('nav.faculty')}
             </Link>
             <Link
               href="/contact"
-              className="block px-4 py-3.5 text-2xl font-semibold text-gray-800 hover:bg-[#e8f4fa] hover:text-[#0E8ACA] rounded-md transition"
+              className="block px-4 py-3.5 text-lg font-semibold text-gray-800 hover:bg-[#e8f4fa] hover:text-[#0E8ACA] rounded-md transition"
               onClick={() => setIsMenuOpen(false)}
             >
               {t('nav.contact')}
             </Link>
             <div className="px-4 py-3 flex items-center justify-between border-t border-gray-200 mt-2">
-              <span className="text-2xl font-semibold text-gray-700">Language:</span>
+              <span className="text-lg font-semibold text-gray-700">Language:</span>
               <LanguageSwitcher />
             </div>
             <div className="px-4 py-2 flex items-center justify-center">

@@ -38,10 +38,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-6xl md:text-7xl font-bold mb-6">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">
                 {t('hero.title')}
               </h1>
-              <p className="text-3xl mb-8 text-[#93AEB9]">
+              <p className="text-xl mb-8 text-[#93AEB9]">
                 {t('hero.subtitle')}
               </p>
               <div className="flex flex-wrap gap-4">
@@ -75,7 +75,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                     </svg>
                   </button>
-                  <span className="text-lg text-[#93AEB9]">{t('hero.carousel')}</span>
+                  <span className="text-sm text-[#93AEB9]">{t('hero.carousel')}</span>
                   <button
                     onClick={nextImage}
                     className="p-2 bg-white/20 rounded-full hover:bg-white/30 transition"
@@ -107,7 +107,7 @@ export default function Home() {
       {/* WASC at a Glance */}
       <section className="py-16 bg-off-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-5xl font-bold text-gray-800 mb-12 text-center">{t('glance.title')}</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">{t('glance.title')}</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
               { name: t('glance.hostel'), image: '/p1.jpg' },
@@ -140,7 +140,7 @@ export default function Home() {
             {/* Latest News */}
             <div>
               <div className="flex justify-between items-center mb-6">
-                <h2 className="text-5xl font-bold text-gray-800">{t('news.title')}</h2>
+                <h2 className="text-3xl font-bold text-gray-800">{t('news.title')}</h2>
                 <a href="#" className="text-[#0E8ACA] hover:text-[#0a6fa0] font-medium">{t('news.viewAll')}</a>
               </div>
               <div className="space-y-6">
@@ -149,7 +149,7 @@ export default function Home() {
                     <h3 className="font-semibold text-gray-800 mb-2">{category}</h3>
                     <div className="flex items-center justify-between">
                       <p className="text-gray-600">New {category.toLowerCase()} announcement...</p>
-                      <span className="text-lg text-gray-500">Dec 15, 2024</span>
+                      <span className="text-sm text-gray-500">Dec 15, 2024</span>
                     </div>
                   </div>
                 ))}
@@ -160,10 +160,10 @@ export default function Home() {
             <div className="space-y-8">
               {/* Upcoming Courses */}
               <div>
-                <h2 className="text-5xl font-bold text-gray-800 mb-6">{t('upcoming.title')}</h2>
+                <h2 className="text-3xl font-bold text-gray-800 mb-6">{t('upcoming.title')}</h2>
                 <div className="bg-gray-50 rounded-lg p-4 mb-4 border border-gray-200">
                   <p className="text-gray-700 mb-2">Advanced Administrative Management</p>
-                  <p className="text-lg text-gray-600">Starting: January 2025</p>
+                  <p className="text-sm text-gray-600">Starting: January 2025</p>
                 </div>
                 <button className="w-full px-4 py-2 bg-[#0E8ACA] text-white rounded-md hover:bg-[#0a6fa0] transition shadow-md font-medium">
                   {t('upcoming.viewAll')}
@@ -172,7 +172,7 @@ export default function Home() {
 
               {/* Important Notices */}
               <div>
-                <h2 className="text-5xl font-bold text-gray-800 mb-6">{t('notices.title')}</h2>
+                <h2 className="text-3xl font-bold text-gray-800 mb-6">{t('notices.title')}</h2>
                 <div className="bg-[#f4d99a] rounded-lg p-4 mb-4 border border-[#E6B950]">
                   <p className="text-gray-700">Registration deadline extended for Q1 2025 courses</p>
                 </div>
@@ -188,7 +188,7 @@ export default function Home() {
       {/* Affiliated Organisations */}
       <section className="py-16 bg-[#062D5C] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-5xl font-bold text-white mb-12 text-center">{t('affiliated.title')}</h2>
+          <h2 className="text-3xl font-bold text-white mb-12 text-center">{t('affiliated.title')}</h2>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
             {['NTDC', 'LESCO', 'NESCO', 'PESCO', 'GEPCO'].map((org, index) => (
               <div
@@ -196,9 +196,9 @@ export default function Home() {
                 className="bg-gradient-to-br from-[#e8f4fa] to-[#FBFAF7] rounded-xl p-6 lg:p-8 text-center border-l-4 border-[#0E8ACA] hover:shadow-lg transition-all transform hover:-translate-y-1"
               >
                 <div className="w-20 h-20 bg-[#f4d99a] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-[#062D5C] font-bold text-3xl">{org[0]}</span>
+                  <span className="text-[#062D5C] font-bold text-xl">{org[0]}</span>
                 </div>
-                <h3 className="text-2xl font-bold text-[#062D5C] mb-2">{org}</h3>
+                <h3 className="text-lg font-bold text-[#062D5C] mb-2">{org}</h3>
               </div>
             ))}
           </div>
