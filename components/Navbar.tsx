@@ -69,12 +69,6 @@ export default function Navbar() {
               {t('nav.home')}
             </Link>
             <Link
-              href="/about"
-              className="px-5 py-3 text-lg font-semibold text-gray-800 hover:text-[#0E8ACA] hover:bg-[#e8f4fa] rounded-md transition-colors duration-200"
-            >
-              {t('nav.about')}
-            </Link>
-            <Link
               href="/courses"
               className="px-5 py-3 text-lg font-semibold text-gray-800 hover:text-[#0E8ACA] hover:bg-[#e8f4fa] rounded-md transition-colors duration-200"
             >
@@ -85,6 +79,12 @@ export default function Navbar() {
               className="px-5 py-3 text-lg font-semibold text-gray-800 hover:text-[#0E8ACA] hover:bg-[#e8f4fa] rounded-md transition-colors duration-200"
             >
               {t('nav.faculty')}
+            </Link>
+            <Link
+              href="/about"
+              className="px-5 py-3 text-lg font-semibold text-gray-800 hover:text-[#0E8ACA] hover:bg-[#e8f4fa] rounded-md transition-colors duration-200"
+            >
+              {t('nav.about')}
             </Link>
             <Link
               href="/contact"
@@ -153,13 +153,6 @@ export default function Navbar() {
               {t('nav.home')}
             </Link>
             <Link
-              href="/about"
-              className="block px-4 py-3.5 text-lg font-semibold text-gray-800 hover:bg-[#e8f4fa] hover:text-[#0E8ACA] rounded-md transition"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t('nav.about')}
-            </Link>
-            <Link
               href="/courses"
               className="block px-4 py-3.5 text-lg font-semibold text-gray-800 hover:bg-[#e8f4fa] hover:text-[#0E8ACA] rounded-md transition"
               onClick={() => setIsMenuOpen(false)}
@@ -172,6 +165,13 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(false)}
             >
               {t('nav.faculty')}
+            </Link>
+            <Link
+              href="/about"
+              className="block px-4 py-3.5 text-lg font-semibold text-gray-800 hover:bg-[#e8f4fa] hover:text-[#0E8ACA] rounded-md transition"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {t('nav.about')}
             </Link>
             <Link
               href="/contact"

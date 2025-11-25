@@ -20,7 +20,7 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Contact</h3>
             <p className="mb-2">WAPDA Administrative Staff College</p>
-            <p className="mb-2">Sunnyabad</p>
+            <p className="mb-2">Islamabad</p>
             <p className="text-[#0E8ACA]">info@wasc.gov.pk</p>
           </div>
 
